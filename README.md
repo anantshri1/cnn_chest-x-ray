@@ -89,7 +89,7 @@ This is intentionally a proof of concept, not a production-grade medical classif
 - **Class imbalance.** The COVID-19 training set (~460 images) is about 3× smaller than the Pneumonia set (~4273). Class weighting partially compensates, but with this little COVID-19 data the model has limited ability to learn discriminative features for that class. The low COVID-19 F1 (0.14) reflects this directly.
 - **No transfer learning.** The network is trained from scratch. A pretrained backbone (e.g. ResNet, EfficientNet) would almost certainly improve performance, especially on the minority class.
 - **Image resolution.** 224×224 grayscale-to-RGB is a reasonable baseline but clinical X-ray analysis typically operates at higher resolution.
-- A companion notebook covering **binary classification (Sick vs Normal)** is also available in this repository, which sidesteps the multi-class imbalance problem entirely and achieves stronger results.
+
 
 ---
 
